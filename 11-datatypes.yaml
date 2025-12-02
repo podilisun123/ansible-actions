@@ -1,0 +1,17 @@
+- name: datatype in ansible
+  hosts: localhost
+  vars:
+  - Course: "devops with AWS"
+    Subject:
+    - linux
+    - shell script
+    - ansible
+    Completed:
+      linux: 100
+      shell script: 50
+      ansible: 30
+    isproject: true
+  tasks:
+  - name: print info
+    ansible.builtin.debug:
+      msg: "the course is {{Course}} and subjects are {{Subject}} and completed {{Completed}} is this project{{isproject}}"
