@@ -1,5 +1,5 @@
 - name: variables
-  hosts: localhostcc
+  hosts: localhost
   tasks: 
   - name: printing variables
     ansible.builtin.debug:
