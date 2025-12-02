@@ -1,0 +1,11 @@
+- name: looping 
+  hosts: web
+  become: yes
+  tasks:
+  - name: printing info
+    ansible.builtin.debug:
+      msg= " listed softwares is {{ item }}"
+    loop:
+    - mysql
+    - git
+    - postgress
