@@ -4,10 +4,10 @@
     Level: "play level"
   # vars_files:
   # - vars.yaml
-  vars_prompt:
-  - name: Level 
-    prompt: "please enter level"
-    private: false
+  # vars_prompt:
+  # - name: Level 
+  #   prompt: "please enter level"
+  #   private: false
   tasks: 
   - name: printing variables
     # vars:
