@@ -7,9 +7,10 @@
   vars_prompt:
   - name: Level 
     prompt: "please enter level"
+    private: false
   tasks: 
   - name: printing variables
-    vars:
-      Level: "tasks level"
+    # vars:
+    #   Level: "tasks level"
     ansible.builtin.debug:
       msg: "variable level {{Level}}"
