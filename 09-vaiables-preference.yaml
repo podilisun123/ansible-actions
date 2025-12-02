@@ -2,8 +2,8 @@
   hosts: localhost
   vars:
     Level: "play level"
-  vars_files:
-  - vars.yaml
+  # vars_files:
+  # - vars.yaml
   vars_prompt:
   - name: Level 
     prompt: "please enter level"
