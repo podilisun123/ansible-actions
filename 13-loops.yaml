@@ -4,7 +4,7 @@
   tasks:
   - name: printing info
     ansible.builtin.debug:
-      msg= "listed softwares is {{ item }}"
+      msg: "listed softwares is {{ item }}"
     loop:
     - mysql
     - git
