@@ -1,7 +1,4 @@
 - name: number is greater than 10
-    ansible.builtin.debug:
-      msg: "number is greater than 10"
-    when: number | int > 10- name: using filters
   hosts: localhost
   vars_prompt:
     name: number
