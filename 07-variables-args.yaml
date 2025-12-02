@@ -1,0 +1,6 @@
+- name: variables
+  hosts: localhostcc
+  tasks: 
+  - name: printing variables
+    ansible.builtin.debug:
+      msg: "name is {{Name}} and seat is {{Preference}} time is {{Time}}"
