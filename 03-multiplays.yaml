@@ -9,4 +9,4 @@
   tasks:
   - name: print play2 info
     ansible.builtin.debug:
-      msg: "this is play-1 activity"
+      msg: "this is play-2activity"
