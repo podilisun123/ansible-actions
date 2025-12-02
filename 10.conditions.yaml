@@ -1,0 +1,10 @@
+- name: conditions 
+  hosts: web
+  become: true
+  tasks:
+  - name: check user variable
+    ansible.builtin.command: id expense
+    register: USER 
+  - name: Print info
+    ansible.builtin.debug:
+     msg: "print user info {{USER}}"
