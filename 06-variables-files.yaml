@@ -1,0 +1,8 @@
+- name: variables
+  hosts: localhost
+  vars_file:
+  - vars.yamlccccccrjtunruhrkniju 
+  tasks: 
+  - name: printing variables
+    ansible.builtin.debug:
+      msg: "name is {{Name}} and seat is {{Preference}} time is {{Time}}"
