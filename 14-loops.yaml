@@ -1,0 +1,12 @@
+- name: looping 
+  hosts: web
+  become: yes
+  tasks:
+  - name: install multiple packages
+    ansible.builtin.dnf:
+      name: name.{{ item }}
+      state: state.{{ item }}
+    loop:
+    - { name="mysql" state="present" }    
+    - { name="git" state="present" }
+    - { name="postgress" state="present" }
