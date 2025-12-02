@@ -14,3 +14,8 @@
     #   Level: "tasks level"
     ansible.builtin.debug:
       msg: "variable level {{Level}}"
+
+
+## 1. task level
+## 2. file level
+## 3. prompt level
